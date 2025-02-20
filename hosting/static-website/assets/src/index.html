@@ -2,13 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Static Website</title>
-    <base href="/">
-
-    <link type="text/css" rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebsiteKu</title>
+    <link rel="stylesheet" href="main.css" />
 </head>
 <body>
-    <img src="logo.png" alt="DFINITY logo" />
+    <!-- Header / Logo -->
+    <header>
+        <img src="logo.png" alt="Logo DFINITY" class="logo">
+        <h1>Naqib Zuhair Al-Hudri</h1>
+        <p>Website ini dibuat untuk pembelajaran.</p>
+    </header>
+
+    <!-- Form Login -->
+    <section class="login-form">
+        <h2>Login</h2>
+        <form action="login_process.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>This Website made by Naqib Zuhair Al-Hudri</p>
+    </footer>
 </body>
 </html>
